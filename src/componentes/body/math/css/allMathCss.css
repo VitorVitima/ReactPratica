@@ -1,0 +1,4 @@
+
+.mathTag::after{
+    content: '.';
+}

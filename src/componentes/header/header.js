@@ -1,9 +1,10 @@
 import './css/style.css'
+import Clock from './clock/clock.js'
 const headerFun = () => {
     return(
         <>
             <header>
-                <h1>TextSla</h1>
+                <Clock></Clock>
             </header>
         </>
     )

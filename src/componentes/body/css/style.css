@@ -3,3 +3,16 @@ p{
     font-size: 25px;
     margin: 20px 10px;
 }
+
+a{
+    margin: 0px 20px;
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    background-color: purple;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: underline;
+}
