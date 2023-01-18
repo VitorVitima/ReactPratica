@@ -1,10 +1,20 @@
-function clock() {
+import { useState } from "react";
+function Clock() {
+    const [s, setS] = useState()
+    const intervalo = () => {
+        setInterval(()=>{
+            const data = new Date().toLocaleTimeString();
+            setS(data);
+            return (s);
+        }, 1000)
+    }
+    intervalo()
     return(
         <>
             <p>
-                awdw
+                {s}
             </p>
         </>
     )
 }
-export default clock;
+export default Clock;

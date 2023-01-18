@@ -1,16 +1,12 @@
 import React from 'react';
-import './css/style.css'
-import Clock from './clock/clock.js';
-function sla(props) {
+import './css/style.css';
+import Bae from './element/buttonAddElement.js';
+function Sla(props) {
     return(
         <>
-            <p>
-                <Clock></Clock>
-            </p>
-            <p>
-                
-            </p>
+            <Bae></Bae>
+            <Bae></Bae>
         </>
     )
 }
-export default sla;
+export default Sla;

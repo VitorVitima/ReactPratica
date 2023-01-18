@@ -1,8 +1,6 @@
-import './css/style.css'
-import Clock from './clock/clock.js'
-import { useState } from 'react';
-
-function headerFun() {
+import './css/style.css';
+import Clock from './clock/clock.js';
+function HeaderFun() {
     return(
         <>
             <header>
@@ -12,4 +10,4 @@ function headerFun() {
     )
 }
 
-export default headerFun;
+export default HeaderFun;
