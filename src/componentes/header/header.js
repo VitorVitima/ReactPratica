@@ -1,6 +1,8 @@
 import './css/style.css'
 import Clock from './clock/clock.js'
-const headerFun = () => {
+import { useState } from 'react';
+
+function headerFun() {
     return(
         <>
             <header>
