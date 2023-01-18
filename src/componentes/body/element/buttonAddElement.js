@@ -3,7 +3,7 @@ const Bae = () => {
     const [number, setNumber] = useState(0)
     function add() {
         console.log(number)
-        return setNumber(number+1);
+        return setNumber(number+1); // forma correta com const != forma errada (number+=1)
     }
     return(
         <>
@@ -16,5 +16,4 @@ const Bae = () => {
         </>
     )
 }
-
 export default Bae;
