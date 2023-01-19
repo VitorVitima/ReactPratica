@@ -1,12 +1,30 @@
 import { useState } from "react";
 function List2(){
-    const [posi, setPosi] = useState(0);
-    const palavras = [];
-    const clickButton = () => {
-        const inputValue = document.querySelector('input[type=text]');
-        setPosi(inputValue.value);
-        if(posi != 0){
-            palavras.push(posi);
+    const [va, setVa] = useState('lol')
+    const palavras = '';
+    const clickButton = ()=>{
+        const inputText = document.querySelector('input[type=text');
+        if(va == true || va == 'lol'){
+            palavras = inputText.value;
+            setVa(false);
+        }else{
+            palavras = inputText.value;
+            setVa(true);
+        }
+    }
+    const listScreen = () => {
+        if(va == true && va != 'lol'){
+            return(
+                <p>
+                    {palavras}
+                </p>
+            )
+        } else if(va == false && va != 'lol'){
+            return(
+                <p>
+                    {palavras}
+                </p>
+            )
         }
     }
     return(
@@ -20,6 +38,7 @@ function List2(){
                     value='Salvar'
                     onClick={clickButton}
                 />
+                {listScreen}
             </section>
         </>
     )
