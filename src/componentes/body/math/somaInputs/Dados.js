@@ -45,6 +45,7 @@ function Dados(props){
                     nota3={props.nota3}
                     nota4={props.nota4}
                     nota5={props.nota5}
+                    passou={props.passou} setPassou={props.setPassou}
                 ></Resultado>
             </div>
         </>

@@ -6,6 +6,7 @@ function Notas(){
     const [nota3, setNota3] = useState(0);
     const [nota4, setNota4] = useState(0);
     const [nota5, setNota5] = useState(0);
+    const [passou, setPassou] = useState(false);
     return(
         <div>
             <DadosNota
@@ -14,6 +15,7 @@ function Notas(){
                 nota3={nota3} setNota3={setNota3} num3='3'
                 nota4={nota4} setNota4={setNota4} num4='4'
                 nota5={nota5} setNota5={setNota5} num5='5'
+                passou={passou} setPassou={setPassou}
             ></DadosNota>
         </div>
     )
