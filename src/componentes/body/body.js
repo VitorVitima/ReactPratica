@@ -9,11 +9,12 @@ import Sc from './screenColor/SC.jsx';
 //pt2
 import Select1 from './select/Test01.jsx';
 import Input2 from './input/input2.jsx';
+import Input3 from './input/Input3.jsx';
 function Sla(props) {
     return(
         <>
             <Select1></Select1>
-            <Input2></Input2>
+            <Input3></Input3>
         </>
     )
 }
