@@ -2,3 +2,9 @@ div#conteinerList3{
     display: flex;
     flex-direction: column;
 }
+div#paTag{
+    width: 500px;
+}
+div#inputsTag{
+    width: 500px;
+}

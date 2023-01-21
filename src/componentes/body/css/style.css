@@ -16,3 +16,8 @@ a:hover{
     border-radius: 10px;
     text-decoration: underline;
 }
+div#sc{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+}

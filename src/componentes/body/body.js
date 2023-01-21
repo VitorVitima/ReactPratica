@@ -4,8 +4,8 @@ import Bae from './element/buttonAddElement.js';
 import Btv from './element/buttonTakeValue/ButtonTakeValue.js';
 import Render from './renderizacaoC/logarLogado/LogarLogado.jsx';
 import Scolors from './renderizacaoC/switchColors/SwitchColors.jsx';
-import Input1 from './input/Input1.jsx';
 import List3 from './list/List3.jsx';
+import Sc from './screenColor/SC.jsx';
 function Sla(props) {
     return(
         <>
@@ -14,7 +14,7 @@ function Sla(props) {
             <Btv></Btv>
             <Render></Render>
             <Scolors></Scolors>
-            <Input1></Input1>
+            <Sc></Sc>
         </>
     )
 }
