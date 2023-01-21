@@ -6,15 +6,12 @@ import Render from './renderizacaoC/logarLogado/LogarLogado.jsx';
 import Scolors from './renderizacaoC/switchColors/SwitchColors.jsx';
 import List3 from './list/List3.jsx';
 import Sc from './screenColor/SC.jsx';
+//pt2
+import Select1 from './select/Test01.jsx';
 function Sla(props) {
     return(
         <>
-            <List3></List3>
-            <Bae></Bae>
-            <Btv></Btv>
-            <Render></Render>
-            <Scolors></Scolors>
-            <Sc></Sc>
+            <Select1></Select1>
         </>
     )
 }

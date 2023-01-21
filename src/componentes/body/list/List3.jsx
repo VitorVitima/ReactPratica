@@ -20,7 +20,6 @@ function List3(){
                     type='text'
                     onChange={(e)=>{
                         setPa(e.target.value);
-                        listV(false)
                     }}
                 />
                 <button
