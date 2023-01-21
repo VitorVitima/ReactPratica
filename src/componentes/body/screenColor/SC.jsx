@@ -8,12 +8,7 @@ function ScreenColor(){
                 type="color"
                 onChange={(e)=>setC(e.target.value)}
             />
-            <div
-                style={{
-
-                    backgroundColor: c
-                }}
-            >
+            <div style={{backgroundColor: c}}>
 
             </div>
         </>

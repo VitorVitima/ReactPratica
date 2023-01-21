@@ -1,28 +1,24 @@
 import {useState} from 'react';
+import './css.css'
 function Select01(){
-    const [game, setGame] = useState()
-    const optionSelected = () =>{
-        const allOptions = [...document.querySelector('option')];
-        allOptions.map((el)=>{
-            if(el.selected == true){
-                return setGame(el.value);
-            }
-        })
+    const [game, setGame] = useState('League of Legends')
+    const optionSelected = (e) =>{
+        return setGame(e.target.value);
     }
     return(
-        <>
+        <section>
             <select
-                onClick={(e)=>{optionSelected()}}
+                onClick={(e)=>{optionSelected(e)}}
             >
-                <option value='Lol'>League of Legends</option>
-                <option value='FF'>Free Fire</option>
-                <option value='Dota2'>Dota 2</option>
-                <option value='GOD'>God of War</option>
+                <option value='League of Legends'>League of Legends</option>
+                <option value='Free Fire'>Free Fire</option>
+                <option value='Dota 2'>Dota 2</option>
+                <option value='God of War'>God of War</option>
             </select>
-            <div>
+            <div id='divGames'>
                 O game selecionado é {game}
             </div>
-        </>  
+        </section>  
     )
 }
 export default Select01;
