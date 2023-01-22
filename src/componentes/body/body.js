@@ -10,11 +10,11 @@ import Sc from './screenColor/SC.jsx';
 import Select1 from './select/Test01.jsx';
 import Input2 from './input/input2.jsx';
 import Input3 from './input/Input3.jsx';
-import Notas from './math/somaInputs/Notas.js';
+import Notas2 from './math/somaInputs2/Notas.jsx';
 function Sla(props) {
     return(
         <>
-            <Notas></Notas>
+            <Notas2></Notas2>
             
         </>
     )
