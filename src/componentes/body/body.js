@@ -11,11 +11,15 @@ import Select1 from './select/Test01.jsx';
 import Input2 from './input/input2.jsx';
 import Input3 from './input/Input3.jsx';
 import Notas2 from './math/somaInputs2/Notas.jsx';
+import Con from './contentacao/Contenta.jsx';
 function Sla(props) {
     return(
         <>
-            <Notas2></Notas2>
-            
+            <Con>
+                <p>Lukas</p>
+                <p>Ana</p>
+                <p>João</p>
+            </Con>
         </>
     )
 }
