@@ -3,35 +3,33 @@ import Dados from './Dados.jsx';
 import Resultado from './Resultado.jsx';
 import './css/styleAll.css';
 function Notas2(){
-    const [nota1, setNota1] = useState(0);
-    const [nota2, setNota2] = useState(0);
-    const [nota3, setNota3] = useState(0);
-    const [nota4, setNota4] = useState(0);
-    const [nota5, setNota5] = useState(0);
+    const [nota, setNota] = useState({
+        'nota1':0, 'nota2':0, 'nota3':0, 'nota4':0, 'nota5':0
+    })
     return(
         <>
             <Dados
-                num='1' nota={nota1} setNota={setNota1} value={nota1}
+                num='1' setNota={setNota} allNotas={nota}
             ></Dados>
             <Dados
-                num='2' nota={nota2} setNota={setNota2} value={nota2}
+                num='2' setNota={setNota} allNotas={nota}
             ></Dados>
             <Dados
-                num='3' nota={nota3} setNota={setNota3} value={nota3}
+                num='3' setNota={setNota} allNotas={nota}
             ></Dados>
             <Dados
-                num='4' nota={nota4} setNota={setNota4} value={nota4}
+                num='4' setNota={setNota} allNotas={nota}
             ></Dados>
             <Dados
-                num='5' nota={nota5} setNota={setNota5} value={nota5}
+                num='5' setNota={setNota} allNotas={nota}
             ></Dados>
             <div id="resultado">
                 <Resultado
-                    nota1={nota1}
-                    nota2={nota2}
-                    nota3={nota3}
-                    nota4={nota4}
-                    nota5={nota5}
+                    nota1={nota.nota1}
+                    nota2={nota.nota2}
+                    nota3={nota.nota3}
+                    nota4={nota.nota4}
+                    nota5={nota.nota5}
                 ></Resultado>
             </div>
         </>
