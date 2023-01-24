@@ -6,7 +6,8 @@ class Test02 extends React.Component{
         this.state = {
             ligado: false,
             marca: 'Ford',
-            estado: 'Novo'
+            estado: 'Novo',
+            velocidade: 0
         }
     }
     onOff(){
@@ -16,14 +17,10 @@ class Test02 extends React.Component{
         return this.state.ligado?'Desligar':'Ligar';
     }
     onOffMotor(){
-        if(this.state.ligado == false){
-            this.setState({ligado: true});
-        } else{
-            this.setState({ligado:false});
-        }
+            this.setState({ligado: !this.state.ligado, velocidade: 0});
     }
     setEstado(){
-        if(this.state.ligado == true){
+        if(this.state.ligado){
             this.v1 += 1;
             if(this.v1 < 6){
                 this.setState({estado: 'seminovo'});
@@ -36,6 +33,18 @@ class Test02 extends React.Component{
             alert('Carro desligado.');
         }
     }
+    acelerar(){
+        this.setState(
+            ()=>({velocidade: this.state.velocidade + this.props.speed})
+        )
+        /*
+        this.setState(
+            function (){
+                return {velocidade: this.state.velocidade + this.props.speed}
+            }
+        )
+    */
+    }
     render(){
         return(
             <>
@@ -43,12 +52,16 @@ class Test02 extends React.Component{
                 <p>Marca: {this.state.marca}</p>
                 <p>Motor: {this.onOff()}</p>
                 <p>Estado: {this.state.estado}</p>
+                <p>Velocidade: {this.state.velocidade} km/h</p>
                 <button
                     onClick={()=>this.onOffMotor()}
                 >{this.desligarLigar()}</button>
                 <button
                     onClick={()=>this.setEstado()}
                 >Usar Carro</button>
+                <button
+                    onClick={()=>this.acelerar()}
+                >Acelerar</button>
             </>
         )
     }

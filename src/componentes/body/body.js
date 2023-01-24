@@ -18,7 +18,9 @@ import ClasseT from './componenteClasse/Test02';
 function Sla(props) {
     return(
         <>
-            <ClasseT></ClasseT>
+            <ClasseT
+                speed={1}
+            ></ClasseT>
         </>
     )
 }
