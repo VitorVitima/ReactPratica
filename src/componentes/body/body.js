@@ -14,10 +14,11 @@ import Notas2 from './math/somaInputs2/Notas.jsx';
 import Con from './contentacao/Contenta.jsx';
 import UseEff from './UseEffect/Use.jsx';
 import Local from './LocalStorage/Local.js';
+import ClasseT from './componenteClasse/Test02';
 function Sla(props) {
     return(
         <>
-            <Local></Local>
+            <ClasseT></ClasseT>
         </>
     )
 }
