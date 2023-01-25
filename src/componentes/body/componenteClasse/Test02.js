@@ -9,6 +9,8 @@ class Test02 extends React.Component{
             estado: 'Novo',
             velocidade: 0
         }
+        this.acelerar = this.acelerar.bind(this);
+        this.estado = this.setEstado.bind(this);
     }
     onOff(){
         return this.state.ligado?'Ligado':'Desligado';
@@ -57,10 +59,10 @@ class Test02 extends React.Component{
                     onClick={()=>this.onOffMotor()}
                 >{this.desligarLigar()}</button>
                 <button
-                    onClick={()=>this.setEstado()}
+                    onClick={this.estado}
                 >Usar Carro</button>
                 <button
-                    onClick={()=>this.acelerar()}
+                    onClick={this.acelerar}
                 >Acelerar</button>
             </>
         )
