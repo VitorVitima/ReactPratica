@@ -1,5 +1,6 @@
 import React from 'react';
 import './css/style.css';
+import Dados from './globai/varGlobais.js';
 import Bae from './element/buttonAddElement.js';
 import Btv from './element/buttonTakeValue/ButtonTakeValue.js';
 import Render from './renderizacaoC/logarLogado/LogarLogado.jsx';
@@ -15,12 +16,13 @@ import Con from './contentacao/Contenta.jsx';
 import UseEff from './UseEffect/Use.jsx';
 import Local from './LocalStorage/Local.js';
 import ClasseT from './componenteClasse/Test02';
+import ClassT2 from './componenteClasse/Test03.js';
+import Trash from './globai/trash.js';
+import Home from './paginas/Home.js';
 function Sla(props) {
     return(
         <>
-            <ClasseT
-                speed={1}
-            ></ClasseT>
+            <Home></Home>
         </>
     )
 }
