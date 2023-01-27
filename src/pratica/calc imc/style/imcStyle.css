@@ -1,0 +1,32 @@
+div#allImc{
+    background-color: pink;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #ffc0cb73;
+}
+div#pesoInputs, div#alturaInputs, div#result{
+    width: fit-content;
+    user-select: none;
+}
+table{
+    min-width: 370px;
+}
+div#pesoInputs input, div#alturaInputs input{
+    border: none;
+    border-radius: 2px;
+    padding: 2px;
+}
+div#pesoInputs input:focus, div#alturaInputs input:focus{
+    outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

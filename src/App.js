@@ -1,11 +1,10 @@
 import Body from './componentes/body/body.js';
 import Header from './componentes/header/header.js';
-import Carros from './pratica/carros/index.js';
-
+import Calc from './pratica/calculadora/Calc.js';
 function App() {
   return (
     <>
-      <Carros></Carros>
+        <Calc></Calc>
     </>
   );
 }

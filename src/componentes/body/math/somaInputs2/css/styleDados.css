@@ -2,6 +2,3 @@ div{
     width: 500px;
     height: 40px;
 }
-label::after{
-    content: ': ';
-}
