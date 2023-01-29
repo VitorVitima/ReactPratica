@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap');
+div#calcTag{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+div#buttonsDiv{
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+div#buttonsDiv input[type='button']{
+    background-color: gray;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid black;
+    color: white;
+    width: 50px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    height: 50px;
+    cursor: pointer;
+}
+div#buttonsDiv input.operador{
+    color: green;
+}
+div#buttonsDiv input[value='AC']{
+    color: red;
+}
+div#buttonsDiv input#iqual{
+    border-radius: 50px;
+    width: 100px;
+    background-color: green;
+}
