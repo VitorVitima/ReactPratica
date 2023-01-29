@@ -1,7 +1,7 @@
 import React from 'react';
 function AllButtons(props){
     const acClear = () => {
-        props.setS(0);
+        props.setS('');
     }
     const concatenar = e => {
         if(e.target.getAttribute('class') == null){
@@ -19,8 +19,8 @@ function AllButtons(props){
     return(
         <>
             <input id='ac' onClick={()=>acClear()} type='button' value='AC'/>
-            <input onClick={(e)=>concatenar(e)} type='button' value='('/>
-            <input onClick={(e)=>concatenar(e)} type='button' value=')'/>
+            <input onClick={(e)=>concatenar(e)} type='button' value='(' className='col'/>
+            <input onClick={(e)=>concatenar(e)} type='button' value=')' className='col'/>
             <input onClick={(e)=>concatenar(e)} type='button' value='/' className='operador' />
             <input onClick={(e)=>concatenar(e)} type='button' value='7'/>
             <input onClick={(e)=>concatenar(e)} type='button' value='8'/>

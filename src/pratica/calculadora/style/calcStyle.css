@@ -1,30 +1,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap');
+:root{
+    --color1: #07457c;
+    --color2: #024059;
+    --color3: #BF6415;
+    --color4: #cba9f8;
+    --color5: #9c109c;
+    --shadow: #0000006b;
+    --shadowButtons: #0000002c;
+}
 div#calcTag{
-    width: 500px;
-    height: 500px;
+    width: 250px;
+    height: 450px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #0000006b;
+    margin: 50px 50px;
+    transition-duration: 0.3s;
 }
+div#calcTag2{
+    width: 250px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #0000006b;
+    margin: 50px 50px;
+    transition-duration: 0.3s;
+}
+
+/* Resultado */
+div#resultadoDiv{
+    box-sizing: border-box;
+    width: 225px;
+    height: 100px;
+    margin: 30px 0px 20px 0px;
+    padding: 0px 20px 0px 0px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    
+    color: black;
+    font-size: 30px;
+
+    box-shadow: inset 0px 0px 10px #00000025;
+    border-radius: 20px;
+    transition-duration: 0.3s;
+}
+div#resultadoDiv2{
+    box-sizing: border-box;
+    width: 225px;
+    height: 100px;
+    margin: 30px 0px 20px 0px;
+    padding: 0px 20px 0px 0px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    
+    color: white;
+    font-size: 30px;
+
+    box-shadow: inset 0px 0px 5px #ffffff70;
+    border-radius: 20px;
+    border: 1px solid #ffffff70;
+    transition-duration: 0.3s;
+}
+/* buttons */
 div#buttonsDiv{
     width: 250px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: space-evenly;
 }
+
+
 div#buttonsDiv input[type='button']{
-    background-color: gray;
+    background-color: white;
+    box-shadow: 0px 0px 10px var(--shadowButtons);
     padding: 10px;
     border-radius: 50%;
-    border: 2px solid black;
-    color: white;
+    border: none;
+    color: black;
     width: 50px;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
     height: 50px;
     cursor: pointer;
-}
-div#buttonsDiv input.operador{
-    color: green;
+    transition-duration: 0.3s;
 }
 div#buttonsDiv input[value='AC']{
     color: red;
@@ -32,5 +105,38 @@ div#buttonsDiv input[value='AC']{
 div#buttonsDiv input#iqual{
     border-radius: 50px;
     width: 100px;
-    background-color: green;
+    color: green;
+}
+
+/* buttons 2 */
+
+div#buttonsDiv2{
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+div#buttonsDiv2 input[type='button']{
+    background-color: black;
+    box-shadow: 0px 0px 5px #fcfcfc5d;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    width: 50px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid #ffffff5e;
+    transition-duration: 0.3s;
+}
+div#buttonsDiv2 input[value='AC']{
+    color: red;
+}
+div#buttonsDiv2 input#iqual{
+    border-radius: 50px;
+    width: 100px;
+    color: green;
 }

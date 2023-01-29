@@ -1,0 +1,59 @@
+div#conteinerBoll{
+    width: 50px;
+    height: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 0px 0px 0px 5px;
+
+    background-color: white;
+    box-shadow: 0px 0px 10px #0000002c;
+
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    left: 240px;
+
+
+}
+div#conteinerBoll2{
+    width: 50px;
+    height: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 0px 5px 0px 5px;
+
+    background-color: black;
+    box-shadow: 0px 0px 10px #ffffff56;
+
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    left: 240px;
+}
+div#boll{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+
+    background-color: black;
+    
+    cursor: pointer;
+
+    transition-duration: 0.3s;
+
+}
+div#boll2{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+
+    background-color: white;
+    margin: 0px 0px 0px calc(50px - 12px - 10px);
+    
+    cursor: pointer;
+
+    transition-duration: 0.3s;
+
+}
