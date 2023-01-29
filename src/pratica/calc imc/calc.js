@@ -1,13 +1,15 @@
-import React, {useState} from 'react';
+import React from 'react';
 class Calc extends React.Component{
-    constructor(){
+    constructor(props){
+        super(props);
         this.state = {
             peso: 0,
             altura: 0,
         }
-        this.r = Number(this.state.peso) / (Number(this.state.altura) * 2);
+        this.r = ''
     }
     resultado(){
+        this.r = Number(this.state.peso) / (Number(this.state.altura) * 2);
         if (String(this.r) == 'NaN'){
             return 0;
         } else{
