@@ -1,0 +1,77 @@
+div#conteinerJogoDaVelha{
+    width: 500px;
+    height: 500px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    background-color: black;
+
+}
+div#row1, div#row2, div#row3{
+    width: fit-content;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+div.allBox{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+}
+div.allBox > div {
+    width: 0%;
+    height: 0%;
+}
+div.allBox > div > div {
+    width: 0px;
+    height: 0px;
+}
+div.allBox > div.boll{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+}
+div.allBox > div.boll div{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    background-color: white;
+}
+div.allBox div.triangle {
+    width: 50px;
+    height: 5px;
+    border-radius: 10px;
+
+    rotate: 45deg;
+
+    background-color: black;
+}
+div.allBox > div.triangle div{
+    width: 50px;
+    height: 5px;
+    border-radius: 10px;
+
+    rotate: -90deg;
+
+    background-color: black;
+}
