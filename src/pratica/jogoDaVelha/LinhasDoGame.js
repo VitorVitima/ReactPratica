@@ -3,33 +3,51 @@ import './css/styleJogoDaVelha.css';
 function LinhasDoGame(props){
     
     function clickDiv(e){
-        if(props.game.switchForm){
+        const classTag = e.target.getAttribute('class').split(' ')
+        const idTag = e.target.getAttribute('id')
+        if(props.game){
             e.target.children[0].className='boll'
-            props.setGame({switchForm: false})
+            props.setGame(false)
+            if(idTag <= 3){
+                props.arrayBox[0][classTag[1] - 1] = false;
+            } else if(idTag <= 6){
+                props.arrayBox[1][classTag[1] - 1] = false;
+            } else{
+                props.arrayBox[2][classTag[1] - 1] = false;
+            }
+            console.log(props.arrayBox)
         } else {
-            props.setGame({switchForm: true})
             e.target.children[0].className='triangle'
+            props.setGame(true)
+            if(idTag <= 3){
+                props.arrayBox[0][classTag[1] - 1] = true;
+            } else if(idTag <= 6){
+                props.arrayBox[1][classTag[1] - 1] = true;
+            } else{
+                props.arrayBox[2][classTag[1] - 1] = true;
+            }
+            console.log(props.arrayBox)
         }
     }
     return(
         <>
             <div id='conteinerJogoDaVelha'>
                 <div id="row1">
-                    <div id='box1' className='allBox' onClick={(e)=>clickDiv(e)}><div><div></div></div></div>
-                    <div id='box2' className='allBox' onClick={(e)=>clickDiv(e)}><div><div></div></div></div>
-                    <div id='box3' className='allBox' onClick={(e)=>clickDiv(e)}><div><div></div></div></div>
+                    <div id='1' className='allBox 1' onClick={(e)=>clickDiv(e)}><div><div></div></div></div>
+                    <div id='2' className='allBox 2' onClick={(e)=>clickDiv(e)}><div><div></div></div></div>
+                    <div id='3' className='allBox 3' onClick={(e)=>clickDiv(e)}><div><div></div></div></div>
                 </div>
                 
                 <div id="row2">
-                    <div id='box4' className='allBox' onClick={(e)=>clickDiv(e)}><div><div></div></div></div>
-                    <div id='box5' className='allBox' onClick={(e)=>clickDiv(e)}><div><div></div></div></div>
-                    <div id='box6' className='allBox' onClick={(e)=>clickDiv(e)}><div><div></div></div></div>
+                    <div id='4' className='allBox 1' onClick={(e)=>clickDiv(e)}><div><div></div></div></div>
+                    <div id='5' className='allBox 2' onClick={(e)=>clickDiv(e)}><div><div></div></div></div>
+                    <div id='6' className='allBox 3' onClick={(e)=>clickDiv(e)}><div><div></div></div></div>
                 </div>
                 
                 <div id="row3">
-                    <div id='box7' className='allBox' onClick={(e)=>clickDiv(e)}><div><div></div></div></div>
-                    <div id='box8' className='allBox' onClick={(e)=>clickDiv(e)}><div><div></div></div></div>
-                    <div id='box9' className='allBox' onClick={(e)=>clickDiv(e)}><div><div></div></div></div>
+                    <div id='7' className='allBox 1' onClick={(e)=>clickDiv(e)}><div><div></div></div></div>
+                    <div id='8' className='allBox 2' onClick={(e)=>clickDiv(e)}><div><div></div></div></div>
+                    <div id='9' className='allBox 3' onClick={(e)=>clickDiv(e)}><div><div></div></div></div>
                 </div>
             </div>
         </>

@@ -1,3 +1,4 @@
+@import url('./globalColors.css');
 div#conteinerJogoDaVelha{
     width: 500px;
     height: 500px;
@@ -8,7 +9,7 @@ div#conteinerJogoDaVelha{
     align-items: center;
     gap: 10px;
 
-    background-color: black;
+    background-color: var(--bgColor);
 
 }
 div#row1, div#row2, div#row3{
@@ -24,12 +25,12 @@ div.allBox{
     width: 100px;
     height: 100px;
     border-radius: 10px;
+    border: 5px solid var(--borderColor);
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    background-color: white;
 }
 div.allBox > div {
     width: 0%;
@@ -43,19 +44,19 @@ div.allBox > div.boll{
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    border: 5px solid var(--colorBoll);
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    background-color: black;
+
+    transition-duration: .3s;
+    transition-delay: 0.1s;
 }
 div.allBox > div.boll div{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-
-    background-color: white;
+    width: 0px;
+    height: 0px;
 }
 div.allBox div.triangle {
     width: 50px;
@@ -64,7 +65,10 @@ div.allBox div.triangle {
 
     rotate: 45deg;
 
-    background-color: black;
+    background-color: var(--colorTriangle);
+
+    transition-duration: .3s;
+    transition-delay: 0.1s;
 }
 div.allBox > div.triangle div{
     width: 50px;
@@ -73,5 +77,8 @@ div.allBox > div.triangle div{
 
     rotate: -90deg;
 
-    background-color: black;
+    background-color: var(--colorTriangle);
+
+    transition-duration: .3s;
+    transition-delay: 0.1s;
 }

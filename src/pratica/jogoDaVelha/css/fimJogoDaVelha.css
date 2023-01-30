@@ -1,0 +1,25 @@
+div#acabouGame{
+    width: 500px;
+    height: 500px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    background-color: #000000;
+    color: white;
+}
+div#acabouGame > button{
+
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid #ffffff2f;
+
+    color: white;
+    background-color: black;
+
+    cursor: pointer;
+    user-select: none;
+}
