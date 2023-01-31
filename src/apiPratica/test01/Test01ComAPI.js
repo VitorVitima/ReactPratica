@@ -17,7 +17,9 @@ class Dados extends React.Component{
                     this.state.dados.map((el)=>{
                         return (
                                 <li key={el.id}>
-                                    <strong>{el.nome}</strong> tem <strong>{el.idade}</strong> e mora em <strong>{el.estado}</strong>
+                                    <strong>{el.nome}</strong> 
+                                    tem <strong>{el.idade}</strong> e 
+                                    mora em <strong>{el.estado}</strong>
                                 </li>
                         )
                     })

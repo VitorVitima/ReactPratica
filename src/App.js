@@ -1,8 +1,8 @@
-import API01 from './apiPratica/test01/Test01ComAPI.js';
+import API02 from './apiPratica/test02/Test02.js';
 function App() {
   return (
     <>
-      <API01></API01>
+      <API02></API02>
     </>
   );
 }
