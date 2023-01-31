@@ -11,9 +11,9 @@ class Calc extends React.Component{
     resultado(){
         this.r = Number(this.state.peso) / (Number(this.state.altura) * 2);
         if (String(this.r) == 'NaN'){
-            return 0;
+            return 0
         } else{
-            return this.r.toFixed(2);
+            return this.r.toFixed(2)
         }
     }
     render(){

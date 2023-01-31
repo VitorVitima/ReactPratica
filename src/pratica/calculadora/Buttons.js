@@ -1,26 +1,35 @@
-import React from 'react';
+import React from 'react'
 function AllButtons(props){
     const acClear = () => {
-        props.setS('');
+        props.setS('')
     }
     const concatenar = e => {
         if(e.target.getAttribute('class') == null){
-            props.setVal(false);
-            console.log(props.val);           
-            return props.setS(props.s + e.target.value);
-        } else if (props.val == false){
-            props.setVal(true);
-            return props.setS(props.s + e.target.value);
+            props.setVal(true)
+            props.setColche(true)
+            props.setS(props.s + e.target.value)
+        } else if (props.val == true && e.target.getAttribute('class') == 'operador'){
+            props.setVal(false)
+            props.setS(props.s + e.target.value)
+        } else if(e.target.getAttribute('class') == 'colchete' && props.colche == true){
+            props.setColche(false)
+            props.setVal(false)
+            props.setS(props.s + e.target.value)
         }
     }
     const resultado = () => {
-        return props.setS(eval(props.s));
+        const sSplit = props.s.split('')
+        if(sSplit.includes(')') == false && sSplit.includes('(') == true){
+            props.setS(eval(props.s + ')'))
+        } else {
+            props.setS(eval(props.s))
+        }
     }   
     return(
         <>
             <input id='ac' onClick={()=>acClear()} type='button' value='AC'/>
-            <input onClick={(e)=>concatenar(e)} type='button' value='('/>
-            <input onClick={(e)=>concatenar(e)} type='button' value=')'/>
+            <input onClick={(e)=>concatenar(e)} type='button' value='(' className='colchete'/>
+            <input onClick={(e)=>concatenar(e)} type='button' value=')' className='colchete'/>
             <input onClick={(e)=>concatenar(e)} type='button' value='/' className='operador' />
             <input onClick={(e)=>concatenar(e)} type='button' value='7'/>
             <input onClick={(e)=>concatenar(e)} type='button' value='8'/>

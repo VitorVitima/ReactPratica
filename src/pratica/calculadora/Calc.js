@@ -4,8 +4,9 @@ import Button from './Buttons.js';
 import './style/calcStyle.css';
 import TrocaCor from './trocaCor.js';
 function Calculadora (){
-    const [register, setRegister] = useState('');
-    const [validador, setVal] = useState(false);
+    const [register, setRegister] = useState('')
+    const [validador, setVal] = useState(false)
+    const [colche, setColche] = useState(true)
     const [colors, setColors] = useState({
         all: 'calcTag',
         resultado: 'resultadoDiv',
@@ -18,7 +19,14 @@ function Calculadora (){
                 <Res num={register}></Res>
             </div>
             <div id={colors.buttons}>
-                <Button setS={setRegister} s={register} val={validador} setVal={setVal}></Button>
+                <Button 
+                    s={register}
+                    setS={setRegister} 
+                    val={validador} 
+                    setVal={setVal}
+                    colche={colche}
+                    setColche={setColche}
+                ></Button>
             </div>
         </div>
     )
