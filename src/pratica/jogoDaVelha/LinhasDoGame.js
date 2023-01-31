@@ -15,7 +15,6 @@ function LinhasDoGame(props){
             } else{
                 props.arrayBox[2][classTag[1] - 1] = false;
             }
-            console.log(props.arrayBox)
         } else {
             e.target.children[0].className='triangle'
             props.setGame(true)
@@ -26,7 +25,6 @@ function LinhasDoGame(props){
             } else{
                 props.arrayBox[2][classTag[1] - 1] = true;
             }
-            console.log(props.arrayBox)
         }
     }
     return(
