@@ -1,8 +1,8 @@
-import API02 from './apiPratica/test02/Test02.js';
+import LinksPratica from './pratica/Links.js';
 function App() {
   return (
     <>
-      <API02></API02>
+      <LinksPratica></LinksPratica>
     </>
   );
 }
