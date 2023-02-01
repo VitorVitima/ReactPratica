@@ -1,13 +1,10 @@
 import React, {useEffect, useState} from 'react';
-
-import axios from 'axios';
 function Test02(){
     const [Dados, setDados] = useState([])
     useEffect(()=>{
-        axios.get('https://MyFirstAPI.ai-se-fosse-o-p.repl.co')
-            .then(e=>{
-                setDados(e.data)
-            })
+        fetch('https://MyFirstAPI.ai-se-fosse-o-p.repl.co')
+         .then(api=>api.json())
+         .then(api=>setDados(api))
     })
     return(
         <ul>
@@ -15,7 +12,7 @@ function Test02(){
                 Dados.map((el)=>{
                     return(
                         <li key={el.id}>
-                            {el.nome}
+                            {el.estado}
                         </li>
                     )
                 })
