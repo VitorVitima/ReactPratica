@@ -1,8 +1,8 @@
-import LinksPratica from './pratica/Links.js';
+import Movies from "./apiPratica/movies/MoviesMaisPopulares";
 function App() {
   return (
     <>
-      <LinksPratica></LinksPratica>
+      
     </>
   );
 }
